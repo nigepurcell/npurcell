@@ -1,0 +1,24 @@
+Dump of assembler code for function func4:
+   0x0000000000400e70 <+0>:     push   %rbx
+   0x0000000000400e71 <+1>:     mov    %edx,%eax
+   0x0000000000400e73 <+3>:     sub    %esi,%eax
+   0x0000000000400e75 <+5>:     mov    %eax,%ebx
+   0x0000000000400e77 <+7>:     shr    $0x1f,%ebx
+   0x0000000000400e7a <+10>:    lea    (%rbx,%rax,1),%eax
+   0x0000000000400e7d <+13>:    sar    %eax
+   0x0000000000400e7f <+15>:    lea    (%rax,%rsi,1),%ebx
+   0x0000000000400e82 <+18>:    cmp    %edi,%ebx
+   0x0000000000400e84 <+20>:    jle    0x400e92 <func4+34>
+   0x0000000000400e86 <+22>:    lea    -0x1(%rbx),%edx
+   0x0000000000400e89 <+25>:    callq  0x400e70 <func4>
+   0x0000000000400e8e <+30>:    add    %eax,%ebx
+   0x0000000000400e90 <+32>:    jmp    0x400ea0 <func4+48>
+   0x0000000000400e92 <+34>:    cmp    %edi,%ebx
+   0x0000000000400e94 <+36>:    jge    0x400ea0 <func4+48>
+   0x0000000000400e96 <+38>:    lea    0x1(%rbx),%esi
+   0x0000000000400e99 <+41>:    callq  0x400e70 <func4>
+   0x0000000000400e9e <+46>:    add    %eax,%ebx
+   0x0000000000400ea0 <+48>:    mov    %ebx,%eax
+   0x0000000000400ea2 <+50>:    pop    %rbx
+   0x0000000000400ea3 <+51>:    retq
+---Type <return> to continue, or q <return> to quit---^CQuit
